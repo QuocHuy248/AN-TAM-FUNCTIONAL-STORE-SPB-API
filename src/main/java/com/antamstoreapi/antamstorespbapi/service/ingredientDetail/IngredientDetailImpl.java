@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.ingredientDetail;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.IngredientDetail;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.IIngredientDetailRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,10 @@ public class IngredientDetailImpl implements IIngredientDetailService{
     }
 
     @Override
-    public Optional<IngredientDetail> findById(String id) {
-        return Optional.empty();
+    public IngredientDetail findById(String id) {
+        return null;
     }
+
 
     @Override
     public IngredientDetail save(IngredientDetail ingredientDetail) {

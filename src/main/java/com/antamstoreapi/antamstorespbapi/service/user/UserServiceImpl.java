@@ -1,5 +1,6 @@
 package com.antamstoreapi.antamstorespbapi.service.user;
 
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.domain.entity.User;
 import com.antamstoreapi.antamstorespbapi.repository.IUserRepository;
 import jakarta.transaction.Transactional;
@@ -21,8 +22,8 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public Optional<User> findById(String id) {
-        return Optional.empty();
+    public User findById(String id) {
+        return null;
     }
 
     @Override

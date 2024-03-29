@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.catalogue;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.Catalogue;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.ICatalogueRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,10 @@ public class CatalogueServiceImpl implements ICatalogueService{
     }
 
     @Override
-    public Optional<Catalogue> findById(String id) {
-        return Optional.empty();
+    public Catalogue findById(String id) {
+        return null;
     }
+
 
     @Override
     public Catalogue save(Catalogue catalogue) {

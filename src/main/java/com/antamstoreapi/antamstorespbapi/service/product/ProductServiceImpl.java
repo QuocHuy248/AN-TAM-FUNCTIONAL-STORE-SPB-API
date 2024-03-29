@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.product;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.Product;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.IProductRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,10 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public Optional<Product> findById(String id) {
-        return Optional.empty();
+    public Product findById(String id) {
+        return null;
     }
+
 
     @Override
     public Product save(Product product) {

@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.targetUser;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.TargetUser;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.ITargetUserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +21,10 @@ public class TargetUserServiceImpl implements ITargetUserService{
     }
 
     @Override
-    public Optional<TargetUser> findById(String id) {
-        return Optional.empty();
+    public TargetUser findById(String id) {
+        return null;
     }
+
 
     @Override
     public TargetUser save(TargetUser targetUser) {

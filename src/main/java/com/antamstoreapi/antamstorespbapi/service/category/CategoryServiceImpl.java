@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.category;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.Category;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.ICategoryRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +22,10 @@ public class CategoryServiceImpl implements ICategoryService{
     }
 
     @Override
-    public Optional<Category> findById(String id) {
-        return Optional.empty();
+    public Category findById(String id) {
+        return null;
     }
+
 
     @Override
     public Category save(Category category) {

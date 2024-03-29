@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.address;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.Address;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.IAdressRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +21,10 @@ public class AddressServiceImpl implements IAddressService{
     }
 
     @Override
-    public Optional<Address> findById(String id) {
-        return Optional.empty();
+    public Address findById(String id) {
+        return null;
     }
+
 
     @Override
     public Address save(Address address) {

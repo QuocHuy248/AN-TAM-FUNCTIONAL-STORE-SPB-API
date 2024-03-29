@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.cart;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.Cart;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.ICartRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,10 @@ public class CartServiceImpl implements ICartService{
     }
 
     @Override
-    public Optional<Cart> findById(String id) {
-        return Optional.empty();
+    public Cart findById(String id) {
+        return null;
     }
+
 
     @Override
     public Cart save(Cart cart) {

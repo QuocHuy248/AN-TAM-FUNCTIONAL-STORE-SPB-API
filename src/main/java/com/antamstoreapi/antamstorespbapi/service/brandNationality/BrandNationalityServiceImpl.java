@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.brandNationality;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.BrandNationality;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.IBrandNationalityRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,8 @@ public class BrandNationalityServiceImpl implements IBrandNationalityService{
     }
 
     @Override
-    public Optional<BrandNationality> findById(String id) {
-        return Optional.empty();
+    public BrandNationality findById(String id) {
+        return null;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.producerCompany;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.ProducerCompany;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.IProducerCompanyRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,8 @@ public class ProducerCompanyServiceImpl implements IProducerCompanyService{
     }
 
     @Override
-    public Optional<ProducerCompany> findById(String id) {
-        return Optional.empty();
+    public ProducerCompany findById(String id) {
+        return null;
     }
 
     @Override

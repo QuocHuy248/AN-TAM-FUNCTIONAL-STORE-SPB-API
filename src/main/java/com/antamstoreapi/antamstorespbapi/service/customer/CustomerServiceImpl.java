@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.customer;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.Customer;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.ICustomerRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +22,10 @@ public class CustomerServiceImpl implements ICustomerService{
     }
 
     @Override
-    public Optional<Customer> findById(String id) {
-        return Optional.empty();
+    public Customer findById(String id) {
+        return null;
     }
+
 
     @Override
     public Customer save(Customer customer) {

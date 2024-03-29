@@ -19,4 +19,8 @@ public class Unit {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
     private String name;
+
+    public Unit(String name) {
+        this.name = name;
+    }
 }

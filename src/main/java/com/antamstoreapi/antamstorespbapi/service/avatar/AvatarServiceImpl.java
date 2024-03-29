@@ -1,6 +1,7 @@
 package com.antamstoreapi.antamstorespbapi.service.avatar;
 
 import com.antamstoreapi.antamstorespbapi.domain.entity.Avatar;
+import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.repository.IAvatarRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,10 @@ public class AvatarServiceImpl implements IAvatarService{
     }
 
     @Override
-    public Optional<Avatar> findById(String id) {
-        return Optional.empty();
+    public Avatar findById(String id) {
+        return null;
     }
+
 
     @Override
     public Avatar save(Avatar avatar) {
