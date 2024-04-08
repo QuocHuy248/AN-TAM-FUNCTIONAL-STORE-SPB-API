@@ -1,10 +1,14 @@
 package com.antamstoreapi.antamstorespbapi.service.unit;
 
+import com.antamstoreapi.antamstorespbapi.domain.dto.unit.UnitReqDTO;
+import com.antamstoreapi.antamstorespbapi.domain.dto.unit.UnitResDTO;
 import com.antamstoreapi.antamstorespbapi.domain.entity.Unit;
 import com.antamstoreapi.antamstorespbapi.exception.ResourceNotFoundException;
 import com.antamstoreapi.antamstorespbapi.repository.IUnitRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -45,6 +49,24 @@ public class UnitServiceImpl implements IUnitService {
         Unit unit = unitRepository.findById(idUnit).orElseThrow(() ->
                 new ResourceNotFoundException("Cant found Unit with this id to delete"));
         unitRepository.delete(unit);
+    }
+
+    @Override
+    public void updateUnitById(UnitReqDTO req, String id) {
+        Unit unit = unitRepository.findById(id).orElseThrow(() ->
+                new ResourceNotFoundException("Unit not found with this id"));
+        unit.setName(req.getNameUnit());
+        unitRepository.save(unit);
+    }
+
+    @Override
+    public Page<UnitResDTO> getAllUnit(Pageable pageable) {
+        return unitRepository.getAllUnit(pageable);
+    }
+
+    @Override
+    public List<UnitResDTO> getAllUnit() {
+        return unitRepository.getAllUnit();
     }
 
     @Override
